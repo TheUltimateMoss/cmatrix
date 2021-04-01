@@ -223,8 +223,8 @@ void handle_sigwinch(int s)
     if (result == -1)
 	return;
 
-    COLS = win.ws_col;
-    LINES = win.ws_row;
+    // COLS = win.ws_col;
+    // LINES = win.ws_row;
 
 #ifdef HAVE_RESIZETERM
     resizeterm(LINES, COLS);
